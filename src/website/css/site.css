@@ -1,22 +1,69 @@
+:root {
+    --color-accent: #004844;
+    --color-accent-text: #fff;
+    --color-background: #fff;
+    --size-page-width: 1200px;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../font/Poppins-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
 body, h1, p, nav {
     margin: 0;
     padding: 0;
 }
 
+body {
+    min-width: 400px;
+}
+
 header {
-    background-color: #004844; 
-    color: #fff; 
-    padding: 10px;
+    background-color: var(--color-accent); 
+    color: var(--color-accent-text);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
 }
 
 header nav {
-    text-align: right;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: var(--size-page-width);
+    margin: auto;
 }
 
 header a {
-    color: #fff; 
+    color: var(--color-accent-text);
     text-decoration: none;
     margin: 0 10px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+.home-icon {
+    font-size: 24px;
+    margin-left: 20px;
 }
 
 main {
@@ -30,8 +77,8 @@ h1 {
 }
 
 footer {
-    background-color: #004844;
-    color: #fff;
+    background-color: var(--color-accent);
+    color: var(--color-accent-text);
     text-align: center;
     padding: 10px;
 }
