@@ -83,7 +83,27 @@ h2 {
 
 p {
     font-size: 1.4em;
-    color: var(--color-text);
+    color: var(--color-text);    
+}
+
+a.button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--color-accent);
+    color: var(--color-accent-text);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.info-panel {
+    padding: 25px;
+}
+.info-panel p {
+    margin: 20px 0;
+}
+
+.panel-default {
+    text-align: right;
 }
 
 section {
@@ -108,7 +128,7 @@ section h1,
 section h2,
 section p {
     text-align: right;
-    padding: 5px 30px 15px 30px;
+    padding: 5px 0px 15px 10px;
 }
 
 @media (max-width: 860px) {
