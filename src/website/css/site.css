@@ -75,23 +75,48 @@ main {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     color: var(--color-text);
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: var(--color-text);
 }
 
 section {
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+section img {
+    margin: 0.2rem 1.5rem 0 1.5rem;
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 50%;
 }
 
 section h1,
 section h2,
 section p {
     text-align: right;
+}
+
+@media (max-width: 860px) {
+    section {
+      flex-direction: column;
+    }
+
+    section h1,
+    section h2,
+    section p {
+        text-align: left;
+    }
+}
+
+section.hero img {
+    max-width: 400px;
+    max-height: 400px;
 }
 
 section.alternate {
