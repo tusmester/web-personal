@@ -5,6 +5,7 @@
     --color-background-alt: #e8f0ff;
     --color-text: #333;
     --size-page-width: 1200px;
+    --size-section-two-column: 860px;
 }
 @font-face {
     font-family: "Poppins";
@@ -69,14 +70,15 @@ header li {
 }
 
 main {
-    padding: 40px;
-    max-width: var(--size-page-width);
     margin: auto;
 }
 
 h1 {
     font-size: 2.2em;
     color: var(--color-text);
+}
+h2 {
+    font-size: 1.8em;
 }
 
 p {
@@ -85,8 +87,14 @@ p {
 }
 
 section {
-    padding: 10px;
+    padding: 20px;
     display: flex;
+    justify-content: center;
+}
+
+section > div {
+    display: flex;
+    max-width: var(--size-page-width);
 }
 
 section img {
@@ -100,10 +108,11 @@ section h1,
 section h2,
 section p {
     text-align: right;
+    padding: 5px 30px 15px 30px;
 }
 
 @media (max-width: 860px) {
-    section {
+    section > div {
       flex-direction: column;
     }
 
