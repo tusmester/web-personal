@@ -2,7 +2,10 @@
     --color-accent: #004844;
     --color-accent-text: #fff;
     --color-background: #fff;
+    --color-background-alt: #e8f0ff;
+    --color-text: #333;
     --size-page-width: 1200px;
+    --size-section-two-column: 860px;
 }
 @font-face {
     font-family: "Poppins";
@@ -67,13 +70,91 @@ header li {
 }
 
 main {
-    padding: 100px;
+    margin: auto;
 }
 
 h1 {
-    font-size: 36px;
-    color: #333; 
-    text-align: center;
+    font-size: 2.2em;
+    color: var(--color-text);
+}
+h2 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.4em;
+    color: var(--color-text);    
+}
+
+a.button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--color-accent);
+    color: var(--color-accent-text);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.info-panel {
+    padding: 25px;
+}
+.info-panel p {
+    margin: 20px 0;
+}
+
+.panel-default {
+    text-align: right;
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+section > div {
+    display: flex;
+    max-width: var(--size-page-width);
+}
+
+section img {
+    margin: 0.2rem 1.5rem 0 1.5rem;
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 50%;
+}
+
+section h1,
+section h2,
+section p {
+    text-align: right;
+    padding: 5px 0px 15px 10px;
+}
+
+@media (max-width: 860px) {
+    section > div {
+      flex-direction: column;
+    }
+
+    section h1,
+    section h2,
+    section p {
+        text-align: left;
+    }
+}
+
+section.hero img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+section.alternate {
+    background-color: var(--color-background-alt);
+}
+
+section.alternate h2,
+section.alternate p {
+    text-align: left;
 }
 
 footer {
@@ -81,4 +162,7 @@ footer {
     color: var(--color-accent-text);
     text-align: center;
     padding: 10px;
+}
+footer p {
+    color: var(--color-accent-text);
 }
