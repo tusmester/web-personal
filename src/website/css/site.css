@@ -4,7 +4,7 @@
     --color-background: #fff;
     --color-background-alt: #e8f0ff;
     --color-text: #333;
-    --color-link: #004844;
+    --color-link: #0a6560;
     --size-page-width: 1200px;
     --size-section-two-column: 860px;
 }
@@ -85,6 +85,14 @@ h2 {
 p {
     font-size: 1.4em;
     color: var(--color-text);    
+}
+
+p span.highlight {
+    font-weight: bold;
+}
+
+p a {
+    font-weight: bold;
 }
 
 a {
