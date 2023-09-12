@@ -207,6 +207,28 @@ footer {
     text-align: center;
     padding: 10px;
 }
+footer h4{
+    font-weight: unset;
+}
 footer p {
     color: var(--color-accent-text);
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li{
+    justify-content: center;
+}
+
+footer li img {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 10px;
+    border-radius: 0%;
 }
