@@ -78,11 +78,16 @@ h1 {
     font-size: 2.2em;
     color: var(--color-text);
 }
+
 h2 {
     font-size: 1.8em;
 }
 
-p {
+h3 {
+    font-size: 1.4em;
+}
+
+p, li {
     font-size: 1.4em;
     color: var(--color-text);    
 }
@@ -114,11 +119,15 @@ a.button {
     padding: 25px;
 }
 .info-panel p {
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
 
 .panel-default {
     text-align: right;
+}
+
+.panel-half {
+    flex: 1;
 }
 
 section {
@@ -137,6 +146,19 @@ section img {
     max-width: 350px;
     max-height: 350px;
     border-radius: 50%;
+}
+
+section.center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+section.center img {
+    margin: 0.2rem 1.5rem 0 1.5rem;
+    max-width: 900px;
+    max-height: 500px;
+    border-radius: 0;
 }
 
 section h1,
@@ -232,6 +254,22 @@ ul.two-column li img {
     max-height: 100px;
     margin: 10px;
     border-radius: 0%;
+}
+
+ul.highlight-boxes {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+ul.highlight-boxes li {    
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.small-comment {
+    font-size: 0.75em;
+    color: gray;
 }
 
 footer {
