@@ -194,6 +194,11 @@ section.hero img {
         max-height: 300px;
     }
 
+    section.center img {
+        max-width: 440px;
+        max-height: 90px;
+    }
+
     ul.two-column li {
         flex-direction: column;
         font-size: 1em;
